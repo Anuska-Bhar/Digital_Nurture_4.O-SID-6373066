@@ -9,7 +9,7 @@ public class BookService {
         this.bookRepository = bookRepository;
     }
 
-    public void displayBook() {
-        System.out.println("Book from repository: " + bookRepository.getBook());
+    public void addBook(String bookName) {
+        bookRepository.saveBook(bookName);
     }
 }

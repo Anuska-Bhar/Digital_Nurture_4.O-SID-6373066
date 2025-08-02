@@ -1,7 +1,7 @@
 package com.library.repository;
 
 public class BookRepository {
-    public String getBook() {
-        return "Effective Java";
+    public void saveBook(String bookName) {
+        System.out.println("Book '" + bookName + "' saved to database.");
     }
 }
